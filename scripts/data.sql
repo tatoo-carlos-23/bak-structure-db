@@ -21,31 +21,27 @@ INSERT INTO booking_status (id, description)VALUES (2, 'Confirmada');
 INSERT INTO booking_status (id, description)VALUES (3, 'En ejecución');
 INSERT INTO booking_status (id, description)VALUES (4, 'Finalizada');
 
-
-SELECT * FROM user_status;
-SELECT * FROM user_roles;
-SELECT * FROM service_status;
-SELECT * FROM service_types;
-SELECT * FROM service_rankings;
-SELECT * FROM booking_status;
-
-
 -- Clave: abc123
 INSERT INTO persons (id, email, password, accepts_terms, accept_privacy_terms) VALUES (1, 'car.abr.04@gmail.com', '$2b$10$Hncu.wnnmNtebIPk559MderEhZMOF25dcmdTzVJ7MSA.HDajFuR6u', 1, 1);
+INSERT INTO persons (id, email, password, accepts_terms, accept_privacy_terms) VALUES (2, 'ivan-12-12@gmail.com', '$2b$10$Hncu.wnnmNtebIPk559MderEhZMOF25dcmdTzVJ7MSA.HDajFuR6u', 1, 1);
+INSERT INTO persons (id, email, password, accepts_terms, accept_privacy_terms) VALUES (3, 'more-24-24@gmail.com', '$2b$10$Hncu.wnnmNtebIPk559MderEhZMOF25dcmdTzVJ7MSA.HDajFuR6u', 1, 1);
+
 INSERT INTO users (id, person_id, rol_id, status_id) VALUES (1, 1, 'C', 'E');
-SELECT * FROM persons;
-SELECT * FROM users;
-
-
+INSERT INTO users (id, person_id, rol_id, status_id) VALUES (2, 2, 'C', 'E');
+INSERT INTO users (id, person_id, rol_id, status_id) VALUES (3, 3, 'C', 'E');
 
 INSERT INTO services (type_id, price, duration, status_id, ranking_id) VALUES (1, 50.48, 75, 'E', 1);
 INSERT INTO services (type_id, price, duration, status_id, ranking_id) VALUES (2, 102.73, 123, 'E', 1);
 INSERT INTO services (type_id, price, duration, status_id, ranking_id) VALUES (3, 85.50, 100, 'E', 1);
 
 
-INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 1, '2026-08-10 10:00:00', '2026-08-10 21:00:00');
-INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 2, '2026-08-10 10:00:00', '2026-08-10 21:00:00');
-INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 3, '2026-08-10 10:00:00', '2026-08-10 21:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 1, '2026-09-10 04:00:00', '2026-09-10 21:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 2, '2026-09-10 04:00:00', '2026-09-10 21:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 3, '2026-09-10 04:00:00', '2026-09-10 21:00:00');
+
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 1, '2026-09-12 04:00:00', '2026-09-12 21:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 2, '2026-09-12 04:00:00', '2026-09-12 21:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 3, '2026-09-12 04:00:00', '2026-09-12 21:00:00');
 
 
 
