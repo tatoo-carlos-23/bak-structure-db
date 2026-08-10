@@ -35,13 +35,13 @@ INSERT INTO services (type_id, price, duration, status_id, ranking_id) VALUES (2
 INSERT INTO services (type_id, price, duration, status_id, ranking_id) VALUES (3, 85.50, 100, 'E', 1);
 
 
-INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 1, '2026-09-10 13:00:00', '2026-09-10 04:00:00');
-INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 2, '2026-09-10 13:00:00', '2026-09-10 04:00:00');
-INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 3, '2026-09-10 13:00:00', '2026-09-10 04:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 1, '2026-09-12 13:00:00', '2026-09-13 04:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 2, '2026-09-12 13:00:00', '2026-09-13 04:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 3, '2026-09-12 13:00:00', '2026-09-13 04:00:00');
 
-INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 1, '2026-09-12 11:00:00', '2026-09-12 03:00:00');
-INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 2, '2026-09-12 11:00:00', '2026-09-12 03:00:00');
-INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 3, '2026-09-12 11:00:00', '2026-09-12 03:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 1, '2026-09-14 11:00:00', '2026-09-15 03:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 2, '2026-09-14 11:00:00', '2026-09-15 03:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 3, '2026-09-14 11:00:00', '2026-09-15 03:00:00');
 
 
 
