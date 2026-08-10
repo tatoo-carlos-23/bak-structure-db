@@ -39,3 +39,14 @@ SELECT * FROM users;
 
 
 INSERT INTO services (type_id, price, duration, status_id, ranking_id) VALUES (1, 50.48, 75, 'E', 1);
+INSERT INTO services (type_id, price, duration, status_id, ranking_id) VALUES (2, 102.73, 123, 'E', 1);
+INSERT INTO services (type_id, price, duration, status_id, ranking_id) VALUES (3, 85.50, 100, 'E', 1);
+
+
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 1, '2026-08-10 10:00:00', '2026-08-10 21:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 2, '2026-08-10 10:00:00', '2026-08-10 21:00:00');
+INSERT INTO schedules (uuid, service_id, start_date, end_date) VALUES (UUID_TO_BIN(UUID()), 3, '2026-08-10 10:00:00', '2026-08-10 21:00:00');
+
+
+
+
